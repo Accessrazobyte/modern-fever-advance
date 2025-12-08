@@ -20,8 +20,61 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .jkl{
+      background-image: url('./images/mobileimg/fever.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 850px;
+    }
+    .jkl1{
+      margin-top: -70px;
+    }
+  
+    @media(max-width:1600px){
+      .jkl{
+        height: 790px;
+      }
+
+    }
+    @media(max-width:1480px){
+      .jkl{
+        height: 720px;
+      }
+
+    }
+     @media(max-width:1340px){
+      .jkl{
+        height: 680px;
+      }
+      .jkl1{
+        margin-top: -140px;
+      }
+    }
+    @media(max-width:1270px){
+      .jkl{
+        height: 600px;
+      }
+      .jkl1{
+        margin-top: -190px;
+      }
+    }
+     @media(max-width:1120px){
+      .jkl{
+        height: 550px;
+      }
+        .jkl1{
+        margin-top: -200px;
+      }
+    }
+    @media(max-width:1000px){
+      .jkl1{
+        margin-top: -70px;
+      }
+    }
+  </style>
 </head>
-<body >
+<body class="">
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M26TV87"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
@@ -31,7 +84,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 
 
-<div class="block md:hidden text-center relative">
+<div class="block lg:hidden text-center relative">
     <img 
       src="./images/mobileimg/fevermobile.png" 
       alt="Mobile Graphic" 
@@ -47,7 +100,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <img
     src="images/mobileimg/Group 4001.png"
     alt="Badge"
-    class="w-[350px] sm:w-[450px] md:w-[600px] lg:w-[750px] xl:w-[850px] max-w-none h-auto drop-shadow-2xl"
+    class="w-[350px] max-w-none h-auto drop-shadow-2xl"
   />
 </div>
 
@@ -139,12 +192,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 
   <!-- ✅ DESKTOP SECTION -->
- <section
-  class="relative hidden md:block w-full bg-no-repeat bg-cover bg-top z-10 pb-[100px]
-        "
-  style="background-image: url('/images/mobileimg/fever.png');"
+<section
+  class="jkl relative w-full z-10
+         bg-cover bg-center 
+         sm:bg-cover sm:bg-center
+         md:bg-top
+         hidden lg:block
+         "
 >
-
 
 <header class="px-4 py-2 flex justify-between items-center hidden md:flex">
   <img 
@@ -165,7 +220,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     class="h-20 w-auto md:h-24"
   >
 </header>
-  <div class="relative max-w-8xl mx-auto px-6 py-12 flex flex-row items-center gap-8 z-10 -mt-[70px] "
+  <div class=" jkl1 relative max-w-8xl mx-auto px-6 py-12 flex flex-row items-center gap-8 z-10 "
   style="font-family: 'Roboto', sans-serif;">
     
     <!-- ✅ Left Text Section -->
